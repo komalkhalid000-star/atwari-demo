@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Al-Atawi Trading & Contracting Group</title>
+  <meta name="description" content="Contact Al-Atawi Trading & Contracting Group in Jeddah. Request manpower or submit your CV." />
+  <meta property="og:title" content="Contact - Al-Atawi Trading & Contracting Group" />
+  <meta property="og:description" content="Get in touch for manpower supply or submit your CV." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <a href="tel:+966508947616"><i class="fas fa-phone"></i> +966 50 894 7616</a>
+        <a href="https://outlook.live.com/mail/0/deeplink/compose?to=al-atwi2911@hotmail.com"><i class="fas fa-envelope"></i> al-atwi2911@hotmail.com</a>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</span>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-circle"><span class="logo-w">W</span></div>
+        <div class="brand-text">Al-Atawi Trading & Contracting Group<small>Supplying Electrical & Plumbing Workers</small></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero short">
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1>Contact <span>Us</span></h1>
+        <p class="desc">Request manpower or submit your CV. We respond quickly.</p>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact / Manpower Request Form -->
+        <div class="form-card reveal">
+          <h2 style="margin-bottom:20px;">Manpower Request</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group"><label>Full Name *</label><input type="text" name="name" required /></div>
+            <div class="form-row">
+              <div class="form-group"><label>Email *</label><input type="email" name="email" required /></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" name="phone" required /></div>
+            </div>
+            <div class="form-group">
+              <label>I am a... *</label>
+              <select name="type" required>
+                <option value="">Select</option>
+                <option value="Company needing workers">Company needing workers</option>
+                <option value="Individual">Individual</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Message *</label><textarea name="message" required></textarea></div>
+            <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+            <button type="submit" class="btn btn-navy btn-submit"><i class="fas fa-paper-plane"></i> Send Request</button>
+            <div class="form-message" id="contactMsg"></div>
+          </form>
+        </div>
+
+        <!-- CV Form -->
+        <div class="form-card reveal" id="cv">
+          <h2 style="margin-bottom:20px;">Submit Your CV</h2>
+          <form id="cvForm" novalidate enctype="multipart/form-data">
+            <div class="form-group"><label>Full Name *</label><input type="text" name="name" required /></div>
+            <div class="form-row">
+              <div class="form-group"><label>Email *</label><input type="email" name="email" required /></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" name="phone" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Trade / Position *</label>
+                <select name="trade" required>
+                  <option value="">Select</option>
+                  <option>Electrician</option>
+                  <option>Plumber</option>
+                  <option>Technician</option>
+                  <option>Helper</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Years of Experience *</label><input type="number" name="experience" min="0" required /></div>
+            </div>
+            <div class="form-group">
+              <label>CV File (PDF/DOC/DOCX, max 5MB) *</label>
+              <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
+            </div>
+            <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+            <button type="submit" class="btn btn-navy btn-submit"><i class="fas fa-upload"></i> Submit CV</button>
+            <div class="form-message" id="cvMsg"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact details -->
+      <div style="margin-top:50px;" class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Contact Details</h3>
+          <div class="info-item"><i class="fas fa-user"></i><div><strong>Abdulaziz Abdo Saif</strong><br/>Contact Person</div></div>
+          <div class="info-item"><i class="fas fa-phone"></i><div><a href="tel:+966508947616">+966 50 894 7616</a></div></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><div><a href="https://outlook.live.com/mail/0/deeplink/compose?to=al-atwi2911@hotmail.com">al-atwi2911@hotmail.com</a></div></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><div>Jeddah - Kingdom Center - King Fahd St., Saudi Arabia</div></div>
+          <div class="info-item"><i class="fas fa-clock"></i><div>Sat - Thu: 8:00 AM - 6:00 PM</div></div>
+        </div>
+        <div class="reveal" style="border-radius:14px;overflow:hidden;box-shadow:var(--shadow);">
+          <iframe src="https://www.google.com/maps?q=21.5433,39.1728&output=embed" width="100%" height="360" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Al-Atawi Trading & Contracting Group</h4><p>Supplying Electrical & Plumbing Workers & Technicians in Jeddah, Saudi Arabia.</p></div>
+        <div><h4>Quick Links</h4><ul style="list-style:none;line-height:2;"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Contact</h4><p><i class="fas fa-user"></i> Abdulaziz Abdo Saif</p><p><a href="tel:+966508947616"><i class="fas fa-phone"></i> +966 50 894 7616</a></p><p><a href="https://outlook.live.com/mail/0/deeplink/compose?to=al-atwi2911@hotmail.com"><i class="fas fa-envelope"></i> al-atwi2911@hotmail.com</a></p></div>
+        <div><h4>Address</h4><p><i class="fas fa-map-marker-alt"></i> Jeddah - Kingdom Center - King Fahd St., Saudi Arabia</p></div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Al-Atawi Trading & Contracting Group. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="floating">
+    <a href="https://wa.me/966508947616?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services" class="float-btn float-wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+966508947616" class="float-btn float-call" aria-label="Call now"><i class="fas fa-phone"></i></a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
